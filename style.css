@@ -7,7 +7,7 @@
 }
 
 body{
-    background: url(/images/pattern-background-desktop.svg);
+    background: url(./images/pattern-background-desktop.svg);
     display: flex;
     justify-content: center;
     align-items: center;
