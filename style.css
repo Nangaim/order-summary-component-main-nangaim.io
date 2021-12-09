@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,700;0,900;1,500&display=swap');
+
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background: url(/images/pattern-background-desktop.svg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+    font-family: Red Hat Display;
+    line-height: 1.5;
+}
+
+.card{
+    background-color: white;
+    display: grid;
+    place-items: center;
+    width: min(80%, 350px);
+    border-radius: 1em;
+}
+.image img{
+    width: 100%;
+    border-radius: 15px 15px 0px 0px;
+    
+}
+
+main{
+    /* margin-top: 1.5em; */
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: hsl(223, 47%, 23%);
+}
+main h3{
+    margin-top: 1em;
+    font-weight: 900;
+}
+main p{
+    width: 75%;
+    margin-top: 1em;
+    color: hsl(224, 23%, 55%);
+    font-size: 0.8rem;
+}
+
+.price{
+    margin-top: 1em;
+    display: flex;
+    align-items: center;
+    width: 80%;
+    padding: 1rem;
+    background-color: hsl(225, 100%, 98%);
+}
+
+.price-detail{
+    margin-right: 3em;
+}
+
+.price-detail h3{
+    font-size: 1rem;
+    font-weight: 900;
+    font-size: 13px;
+    color: hsl(223, 47%, 23%);
+}
+
+.price-detail p{
+    margin-top: 0.3rem;
+    display: inline-block;
+    color: hsl(224, 23%, 55%);
+    font-size: 12px;
+}
+
+.change button{
+    width: 80%;
+    font-size: 14;
+    background: transparent;
+    text-decoration: underline;
+    border: none;
+    color: hsl(245, 75%, 52%);
+}
+
+.iconMusique{
+    margin-right: 1em;
+}
+
+button {
+    font-family: "Red Hat Display", sans-serif;
+    cursor: pointer;
+  }
+
+.order{
+    margin-top: 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 80%;
+}
+
+.order button{
+    width: 100%;
+    font-weight: bold;
+    border-radius: 0.4rem;
+    border:none;
+    padding: 0.6rem;
+}
+
+.proceed{
+    color: white;
+    background: hsl(245, 75%, 52%);
+    box-shadow: 0 20px 10px -5px hsl(225, 100%, 94%);
+}
+
+.cancel{
+    margin-top: 0.5em;
+    margin-bottom: 1em;
+    background: transparent;
+    color: hsl(224, 23%, 55%);
+}
+
+@media screen and (max-width: 375px) {
+    body{
+        font-size: 11px;
+    }
+}
+
+@media screen and (max-width: 280px) {
+    body{
+        font-size: 10px;
+    }
+
+    .card{
+        width: 90%;
+    }
+}
