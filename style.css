@@ -8,6 +8,7 @@
 
 body{
     background: url(./images/pattern-background-desktop.svg);
+    background-size: cover;
     display: flex;
     justify-content: center;
     align-items: center;
